@@ -1,0 +1,199 @@
+/* ====================RESET CSS================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==========================FONT FAMILIES====================== */
+/* Francois One Regular - HEADING*/
+/* Farro Light  - CHAPTERS*/
+/* Staatliches Regular - NAVIGATION*/
+/* Tourney SemiBold  - LANGUAGE*/
+
+/*=============================BASE CSS ======================*/
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 1.71;
+  color: rgba(0, 0, 0, 1);
+
+  padding-bottom: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.francois-one-heading {
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+
+.francois-one-heading .farro-light-chapter {
+  font-family: "Farro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  text-transform: none;
+}
+
+.staatliches-nav {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+}
+
+.tourney-lang {
+  font-family: "Tourney", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 22px;
+}
+
+/* ======================HEADER================= */
+
+.header {
+  margin-bottom: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  z-index: 10;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.header-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lang-and-nav-cotainer {
+  display: flex;
+  gap: 50px;
+}
+
+.header__lang-link {
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.header__list {
+  display: flex;
+  gap: 10px;
+}
+
+.header__img {
+  height: 49px;
+  width: 238px;
+  color: rgba(26, 26, 26, 1);
+}
+
+/* ====================ASIDEBAR=============== */
+.sidebar {
+  position: sticky;
+  top: 137px;
+
+  height: max-content;
+}
+
+.sidebar__item {
+  width: 365px;
+  height: 58px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(189, 189, 189, 1);
+}
+
+.sidebar__item:not(:last-child) {
+  margin-bottom: 70px;
+}
+
+/* ======================MAIN PART================= */
+.content-wrapper {
+  display: flex;
+  gap: 30px;
+
+  padding-top: 137px;
+}
+
+.heading {
+  margin-bottom: 40px;
+
+  padding-top: 20px;
+  position: relative;
+}
+
+/* h2 {
+  padding-top: 20px;
+  position: relative;
+} */
+
+.heading ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 8px;
+
+  background-color: rgba(0, 0, 0, 1);
+}
+
+section:not(:last-child) {
+  margin-bottom: 70px;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.background-text {
+  background-color: rgba(218, 218, 218, 1);
+}
+
+.main-content {
+  background-image: url(../images/bg-picture.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  /* background-size: 760px 760px; */
+
+  background-attachment: fixed;
+}
+
+/* .background-img {
+  position: fixed;
+  top: 137px;
+  right: 0;
+
+  height: 760px;
+  width: 760px;
+
+  z-index: -1;
+} */
